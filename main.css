@@ -1,0 +1,50 @@
+
+body{
+  margin: 0;
+  padding:0;
+}
+
+ .image3  {
+   display: none;
+}
+.image1{
+  display:none;
+}
+
+.image2{
+  display: block;
+  max-width:100%;
+}
+
+@media only screen and (min-width: 1200px){
+  .image2 {
+    max-width:100%;
+     display: none;
+   }
+   .image1 {
+     width:inherit;
+     display: none;
+   }
+
+   .image3{
+     max-width:100%;
+     display: block;
+     width: inherit;
+   }
+}
+
+@media only screen and (max-width: 600px){
+  .image2  {
+    max-width:100%;
+     display: none;
+   }
+   .image3 {
+     width:inherit;
+     display: none;
+   }
+
+   .image1{
+     display: flex;
+     width: inherit;
+   }
+}
